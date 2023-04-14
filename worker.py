@@ -7,7 +7,7 @@ load_dotenv()
 
 TELEGRAM_CHANNEL_ID = os.getenv("TELEGRAM_CHANNEL_ID") 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-SLEEP_TIME = 5
+SLEEP_TIME = int(os.getenv("SLEEP_TIME") or 5)
 
 class Worker:
 
